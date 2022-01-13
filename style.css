@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 637px;
+  background: linear-gradient(250.04deg, #182d9d 15.02%, #000d50 75.06%);
+  border-radius: 0 0 60px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div {
+  color: white;
+  height: 300px;
+  width: 35%;
+  margin: 0 auto;
+}
+header div > * {
+  margin-top: 20px;
+}
+header div button {
+  background-color: transparent;
+  width: 190px;
+  height: 46px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50px;
+}
+header div button:hover {
+  background-color: white;
+  color: #182d9d;
+  transition-duration: 0.3s;
+}
+header div button img {
+  margin-left: 10px;
+}
+
+.work {
+  width: 80%;
+  background: #f5f5f5;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 500px;
+  text-align: center;
+}
+
+.work .cards {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.work .cards .card img {
+  width: 200px;
+}
+
+.work > * {
+  margin-top: 50px !important;
+}
+
+.work button {
+  background-color: transparent;
+  width: 190px;
+  height: 46px;
+  border: 1px solid #17149b;
+  color: #182d9d;
+  border-radius: 50px;
+}
+.work .cards .card {
+  position: relative;
+  width: 200px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.611);
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.work .cards .card:hover > img {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
+/*******************************Media query ******************/
+
+@media only screen and (max-width: 992px) {
+  header img {
+    display: none;
+  }
+
+  header div {
+    width: 90%;
+    margin-top: -300px;
+  }
+  .work {
+    width: 90%;
+    margin-top: -200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .work .cards .card {
+    width: 100%;
+  }
+}
